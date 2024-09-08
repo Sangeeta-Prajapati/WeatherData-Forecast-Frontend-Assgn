@@ -62,7 +62,7 @@ const ForeCast = () => {
     };
     setCurrDate(date.toLocaleDateString("en-Us", options));  
     
-}, [foreCastData]);  */
+},  [foreCastData]);  */
   }
 
   return (
