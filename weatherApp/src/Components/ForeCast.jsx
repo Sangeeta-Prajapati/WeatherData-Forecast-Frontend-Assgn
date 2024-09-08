@@ -8,6 +8,7 @@ import sunIcon from "../assets/icons/sun.jpeg";
 const ForeCast = () => {
   const [foreCastData, setForCastData] = useState([]);
   const [loading, setLoading] = useState(true);
+
   // const [wIforeCastIcon, setWIforeCastIcon] = useState(sunIcon);
 
   const { cityName } = useParams();
