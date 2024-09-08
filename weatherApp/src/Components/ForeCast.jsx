@@ -82,7 +82,7 @@ const ForeCast = () => {
               weatherIcon = sunIcon;
             }
 
-            //  extract  date
+            //  extract date for next days
 
             const date = new Date(day.dt_txt);
             const foreCastDate = date.toLocaleDateString("en-Us", {
