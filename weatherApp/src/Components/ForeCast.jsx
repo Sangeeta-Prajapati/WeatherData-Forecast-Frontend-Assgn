@@ -36,7 +36,8 @@ const ForeCast = () => {
   }, [cityName]);
 
   {
-    /* // for icons
+    /* // for icons to show
+
 
   useEffect(() => {
     if (foreCastData && foreCastData.weather) {
@@ -81,7 +82,7 @@ const ForeCast = () => {
               weatherIcon = sunIcon;
             }
 
-            // extract date
+            //  extract  date
 
             const date = new Date(day.dt_txt);
             const foreCastDate = date.toLocaleDateString("en-Us", {
