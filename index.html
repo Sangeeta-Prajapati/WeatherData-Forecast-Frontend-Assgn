@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgb(250, 247, 247);
+    }
+    h1, h2, h3 {
+      color: rgb(224, 23, 23);
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .main-img {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    .intro-text {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+    /* Expertise Section */
+    .expertise, .process, .mission {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .expertise-grid, .process-steps, .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .expertise-item, .step, .mission-item {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-align: left;
+      transition: transform 0.6s ease, box-shadow 0.3s ease;
+    perspective: 1000px; /* Perspective for 3D effect */
+    transform-style: preserve-3d; /* Enable 3D space for children */
+    }
+    .expertise-item:hover, .step:hover, .mission-item:hover {
+        transform: rotateY(20deg) rotateX(10deg); /* 3D rotation effect */
+        box-shadow: 0 15px 25px rgba(255, 0, 0, 0.6);
+        transition: background-color 2s;
+  background-color: hsl(182, 78%, 73%);
+  animation: pulse-shadow 0.8s infinite ease-in-out;
+    }
+
+    @keyframes pulse-shadow {
+        0%, 100% {
+            box-shadow: 0px 8px 16px rgba(255, 0, 0, 0.6);
+        }
+        50%{
+            box-shadow: 0px 12px 24px rgba(255, 0,0, 0.8)
+        }
+    }
+
+
+    .step ul, .mission-item ul {
+      list-style-type: disc;
+      padding: 20px;
+    }
+    .step ul li, .mission-item ul li {
+      margin-bottom: 10px;
+    }
+    .mission-list {
+      list-style-type: disc;
+      padding-left: 40px;
+      text-align: left;
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+      .expertise-item, .step, .mission-item {
+        text-align: center;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Welcome to DB4CLOUD TECHNOLOGIES PVT LTD</h1>
+      <img src="https://db4cloud.in/wp-content/uploads/2024/08/istockphoto-1321462048-612x612-1.jpg" alt="Digital transformation" class="main-img">
+      <p class="intro-text">Innovation Meets Excellence</p>
+      <p>We craft extraordinary software solutions that redefine technological boundaries. Our passionate team harnesses advanced tools and platforms to deliver cutting-edge solutions tailored to meet your unique business needs.</p>
+    </div>
+  </header>
+
+  <section class="expertise">
+    <div class="container">
+      <h2>Our Expertise</h2>
+      <div class="expertise-grid">
+        <div class="expertise-item">
+          <h3>Cloud Solutions</h3>
+          <p style="text-align: center">Unlock the full potential of the cloud with our comprehensive solutions</p>
+          <ul>
+            <li>
+              AWS:Robust and scalable cloud infrastructure for diverse business needs. 
+            </li>
+            <li>
+              Azure: Seamless integration with Microsoft services for optimized performance.
+            </li>
+            <li>
+              Google Cloud Platform (GCP): Advanced analytics and machine learning capabilities.
+            </li>
+            </ul>
+             <div style="text-align: center">
+          <a href="https://db4cloud.in/cloud-computing/" title="Visit our product"
+             style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:20px">
+             Know More
+          </a> 
+         </div>
+          
+          
+        </div>
+        <div class="expertise-item">
+          <h3>DevOps</h3>
+          <p style="text-align:center">Enhance your development pipeline with our expert DevOps services.</p>
+          <UL>
+            <li>
+              Continuous Integration & Continuous Deployment (CI/CD): Automate your workflows for faster and more reliable releases.
+            </li>
+            <li>
+              Infrastructure as Code (IaC): Manage your infrastructure with code for consistency and scalability.            </li>
+          </UL>
+           <div style="text-align: center">
+          <a href="https://db4cloud.in/devops/" title="Visit our product"
+             style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:30px">
+             Know More
+          </a> 
+         </div>
+        </div>
+        
+        <div class="expertise-item">
+          <h3>ERP & CRM Solutions</h3>
+          <p style="text-align: center">Transform your business operations with our powerful CRM and ERP systems:</p>
+          <ul>
+            <li>
+              Salesforce: Streamline your sales, service, and marketing processes.
+            </li>
+          </ul>
+          <div style="text-align: center">
+          <a href="https://db4cloud.in/erp/" title="Visit our product"
+              style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:100px">
+             Know More
+          </a> 
+         </div>
+        </div>
+      
+        <div class="expertise-item">
+          <h3>Snowflake</h3>
+          <p style="text-align:center">Data Warehousing: Advanced and flexible data storage</p>
+          <div style="text-align: center">
+          <a href="https://db4cloud.in/can-curiosity-may-end-shameless-explained/" title="Visit our product"
+            style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:150px">
+             Know More
+          </a> 
+         </div>
+      
+        </div>
+        
+        <div class="expertise-item">
+          <h3>Atlassian</h3>
+          <p style="text-align: center">Agile Project Management: Streamlined and collaborative solutions</p>
+          <ul>
+            <li> Jira : Advanced project management and issue traking.</li>
+            <li> Confluence : Enhance teame collaboration with powerfull documentation and knowledge-sharing tools.</li>
+          </ul>
+          <div style="text-align: center">
+          <a href="https://db4cloud.in/atlassian/" title="Visit our product"
+            style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:5px">
+             Know More
+          </a> 
+         </div>
+        </div>
+        <div class="expertise-item">
+          <h3>Workday</h3>
+          <p style="text-align:center">Human Capital Management: Complete workforce planning</p>
+           <div style="text-align: center">
+          <a href="https://db4cloud.in/workday/" title="Visit our product"
+             style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:140px">
+            
+             Know More
+          </a> 
+         </div>
+        </div>
+        
+        <div class="expertise-item">
+          <h3>Power BI</h3>
+          <p style="text-align:center">Data Analytics & Business Intelligence: Actionable insights from your data</p>
+          <div style="text-align: center">
+          <a href="https://db4cloud.in/power-bi/" title="Visit our product"
+            style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:20px">
+             Know More
+          </a> 
+         </div>
+        </div>
+        
+        <div class="expertise-item">
+          <h3>Digital marketing</h3>
+          <p style="text-align:center">As marketers, we should be changing the mantra from always be closing to always be helping.</p>
+          <div style="text-align: center">
+          <a href="https://db4cloud.in/digital-marketing/" title="Visit our product"
+             style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:0px">  
+             Know More
+          </a> 
+         </div>
+        </div>
+        
+        <div class="expertise-item">
+          <h3>Web Development</h3>
+          <p style="text-align:center">Great web design without functionality is like a sports car with no engine.</p>
+          <div style="text-align: center">
+          <a href="https://db4cloud.in/web-development/" title="Visit our product"
+             style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:15px">   
+             Know More
+          </a> 
+         </div>
+        </div>
+        
+        <div class="expertise-item">
+          <h3>AI/ML solutions</h3>
+          <p style="text-align:center">Great web design without functionality is like a sports car with no engine.</p>
+          <div style="text-align: center">
+          <a href="https://db4cloud.in/ai-ml-solutions/" title="Visit our product"
+             style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:60px">   
+             Know More
+          </a> 
+         </div>
+        </div>
+        
+        <div class="expertise-item">
+          <h3>Generative AI</h3>
+          <p style="text-align:center">Great web design without functionality is like a sports car with no engine.</p>
+          <div style="text-align: center">
+          <a href="https://db4cloud.in/generative-ai/" title="Visit our product"
+             style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:60px">    
+             Know More
+          </a> 
+         </div>
+        </div>
+        
+         <div class="expertise-item">
+          <h3>Cyber Security</h3>
+          <p style="text-align:center">Aims to protect computer systems, applications, devices, data, financial assets and people against ransomware and other malware, phishing scams, data theft and other cyberthreats.</p>
+          <div style="text-align: center">
+          <a href="https://db4cloud.in/cyber-security/"
+             style="display: inline-block; padding: 10px 20px; background-color: #f2f2f2; color: black; text-decoration: none;
+             border-radius: 5px; font-weight: bold; cursor: pointer;
+             margin-top:0px">        
+             Know More
+          </a> 
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="container">
+      <h2>Our Process</h2>
+      <div class="process-steps">
+        <div class="step">
+          <h3>Discovery</h3>
+         <p style="text-align:center">Understanding your needs and defining the project scope.</p>
+        </div>
+        
+        <div class="step">
+          <h3>Planning</h3>
+          <ul>
+            <li>Conducting feasibility studies</li>
+            <li>Developing strategic roadmaps</li>
+            <li>Defining project timelines and milestones</li>
+            <li>Allocating resources and setting budgets</li>
+          </ul>
+        </div>
+        
+        <div class="step">
+          <h3>Design</h3>
+          <ul>
+            <li>Crafting user-friendly interfaces</li>
+            <li>Creating detailed design mockups</li>
+            <li>Aligning designs with client expectations</li>
+          </ul>
+        </div>
+        
+        <div class="step">
+          <h3>Development</h3>
+          <ul>
+            <li>Building robust and scalable solutions</li>
+            <li>Integrating cutting-edge technologies</li>
+            <li>Conducting rigorous testing and quality assurance</li>
+          </ul>
+        </div>
+        
+        <div class="step">
+          <h3>Deployment</h3>
+          <ul>
+            <li>Seamlessly implementing solutions</li>
+            <li>Minimizing disruption to client operations</li>
+            <li>Providing thorough training and documentation</li>
+          </ul>
+        </div>
+        
+        <div class="step">
+          <h3>Support and Maintenance</h3>
+          <ul>
+            <li>Ongoing support and troubleshooting</li>
+            <li>Regular updates and improvements</li>
+            <li>Ensuring long-term success and client satisfaction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+ <section class="mission">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <div class="mission-grid">
+        <div class="mission-item">
+          <h3>Innovation</h3>
+          <p style="text-align:center">Pioneering solutions that push technological boundaries.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Quality</h3>
+          <p style="text-align:center">Commitment to delivering exceptional quality in every project.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Customer-Centric Approach</h3>
+          <p style="text-align:center">Focused on exceeding customer expectations.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Integrity</h3>
+          <p style="text-align:center">Upholding the highest standards of honesty and transparency.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Sustainability</h3>
+          <p style="text-align:center">Promoting eco-friendly and sustainable business practices.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Excellence</h3>
+          <p style="text-align:center">Striving for excellence in all our endeavors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  </section>
+ <section class="mission">
+    <div class="container">
+      <h2>Our Vision</h2>
+      <div class="mission-grid">
+        <div class="mission-item">
+          <h3>Scalability</h3>
+          <p style="text-align:center">Providing solutions that can grow with our customers’ needs, ensuring flexibility and adaptability.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Data Security</h3>
+          <p style="text-align:center">Prioritizing the protection of customer data through robust security measures and compliance with industry standards.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Cost-Effectiveness</h3>
+          <p style="text-align:center">Developing affordable solutions that provide significant value, helping businesses optimize their operational costs while maximizing output.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Interoperability</h3>
+          <p style="text-align:center">Ensuring our cloud solutions seamlessly integrate with various platforms and technologies, allowing clients to leverage existing tools and data without disruption.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Performance Optimization</h3>
+          <p style="text-align:center">Delivering high-performance solutions that enhance speed and efficiency, helping businesses achieve their objectives faster.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Agility and Flexibility</h3>
+          <p style="text-align:center">Promoting a culture of agility in our development processes, allowing us to respond quickly to market changes and customer requirements.
+
+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
